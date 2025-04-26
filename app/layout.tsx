@@ -31,7 +31,7 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en">
-        <body className={`${roboto.variable} antialiased`}>
+        <body className={`${roboto.variable} antialiased bg-dark-900`}>
           <header className="flex justify-end items-center p-4 gap-4 h-16">
             <SignedOut>
               <SignInButton />
@@ -47,3 +47,4 @@ export default function RootLayout({
     </ClerkProvider>
   )
 }
+ 

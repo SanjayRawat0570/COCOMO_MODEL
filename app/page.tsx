@@ -6,10 +6,10 @@ export default function Home() {
   const defaultResults = calculateBasicCocomo(10, "organic")
 
   return (
-    <div className="container mx-auto py-10 px-4">
-      <h1 className="text-3xl font-bold text-center mb-8">Basic COCOMO Calculator</h1>
+    <div className="min-h-screen bg-black text-white flex flex-col items-center justify-center py-10 px-4">
+      <h1 className="text-4xl font-bold text-center mb-8">Basic COCOMO Calculator</h1>
 
-      <div className="max-w-md mx-auto">
+      <div className="w-full max-w-md bg-neutral-900 rounded-lg shadow-lg p-8">
         <CocomoForm defaultResults={defaultResults} />
       </div>
     </div>
